@@ -1,5 +1,3 @@
-# coding: utf-8
-
 """
     Fanlens API
 
@@ -11,15 +9,14 @@
 """
 
 
-from __future__ import absolute_import
 
 import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.user import User
+import client
+from client.rest import ApiException
+from client.models.user import User
 
 
 class TestUser(unittest.TestCase):

@@ -1,5 +1,3 @@
-# coding: utf-8
-
 """
     Fanlens API
 
@@ -11,22 +9,21 @@
 """
 
 
-from __future__ import absolute_import
 
 import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.model_api import ModelApi
+import client
+from client.rest import ApiException
+from client.apis.model_api import ModelApi
 
 
 class TestModelApi(unittest.TestCase):
     """ ModelApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.model_api.ModelApi()
+        self.api = client.apis.model_api.ModelApi()
 
     def tearDown(self):
         pass
