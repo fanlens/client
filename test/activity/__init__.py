@@ -10,4 +10,5 @@ class TestActivityApi(ApiTestCase[ActivityApi]):
 
     @property
     def api_class(self) -> Type[ActivityApi]:
+        """ :return: The api class this TestCase is testing """
         return ActivityApi
